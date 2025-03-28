@@ -21,24 +21,24 @@ A dynamic web application that fetches and displays book data from the FreeAPI.a
 ## Screenshots
 
 ### Desktop View - Grid Layout
-![Desktop Grid View](./screenshots/grid.png)
+![Desktop Grid View](./grid.png)
 
 ### Desktop View - List Layout
-![Desktop List View](./screenshots/list.png)
+![Desktop List View](./list.png)
 
 ### Mobile Responsive View
-![Mobile View 1](./screenshots/res-1.png)
+![Mobile View 1](./res-1.png)
 
-![Mobile View 2](./screenshots/res-2.png)
+![Mobile View 2](./res-2.png)
 
 ### Search and Sort Functionality
-![Search and Sort](./screenshots/search.png)
+![Search and Sort](./search.png)
 
 - sort
-![Search and Sort](./screenshots/sort.png)
+![Search and Sort](./sort.png)
 
 ### Dark Mode view
-![Search and Sort](./screenshots/dark.png)
+![Search and Sort](./dark.png)
 
 
 ## Live Demo
