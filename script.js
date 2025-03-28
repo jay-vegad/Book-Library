@@ -8,10 +8,34 @@ const gridViewBtn = document.getElementById('gridViewBtn');
 const prevPageBtn = document.getElementById('prevPage');
 const nextPageBtn = document.getElementById('nextPage');
 const currentPageSpan = document.getElementById('currentPage');
+const themeToggle = document.querySelector('.theme-toggle');
 
 let currentPage = 1;
 let totalPages = 1;
 let booksData = [];
+
+// Dark Mode Functionality
+function initDarkMode() {
+    // Check for saved dark mode preference
+    const savedTheme = localStorage.getItem('books-library-theme');
+
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+    }
+
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            localStorage.setItem('books-library-theme', 'dark');
+        } else {
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            localStorage.setItem('books-library-theme', 'light');
+        }
+    });
+}
 
 async function fetchBooks(page = 1) {
     try {
@@ -117,6 +141,7 @@ function updatePaginationControls(page) {
     nextPageBtn.disabled = page === totalPages;
 }
 
+// Event Listeners
 searchButton.addEventListener('click', filterBooks);
 searchInput.addEventListener('input', filterBooks);
 sortSelect.addEventListener('change', sortBooks);
@@ -145,5 +170,6 @@ nextPageBtn.addEventListener('click', () => {
     }
 });
 
-// Initial fetch
+// Initialize
+initDarkMode();
 fetchBooks();
