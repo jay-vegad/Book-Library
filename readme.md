@@ -42,7 +42,7 @@ A dynamic web application that fetches and displays book data from the FreeAPI.a
 
 
 ## Live Demo
-[Add deployment link here]
+[Click here](https://find-book-1.netlify.app/)
 
 ## Setup and Installation
 1. Clone the repository
@@ -54,10 +54,4 @@ A dynamic web application that fetches and displays book data from the FreeAPI.a
 - Documentation: https://freeapi.hashnode.space/api-guide/apireference/getBooks
 
 ## Deployment
-Deployed on [Vercel/Netlify/etc.]
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss proposed changes.
-
-## License
-[Choose an appropriate license]
+Deployed [here](https://find-book-1.netlify.app/)
